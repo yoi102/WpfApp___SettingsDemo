@@ -6,8 +6,8 @@ public class UserSettings
 
     public required string UserSid { get; set; }
 
-    public Setting1 Setting1 { get; set; } = null!;
-    public Setting2 Setting2 { get; set; } = null!;
+    public Setting1 Setting1 { get;private set; } = new();
+    public Setting2 Setting2 { get; private set; } = new();
 
 
 }

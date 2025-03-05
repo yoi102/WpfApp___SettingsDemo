@@ -6,16 +6,12 @@ namespace WpfApp___SettingsDemo.Efcore.ViewModels;
 
 internal partial class Setting1ViewModel : ObservableObject
 {
-    private readonly AppDbContext appDbContext;
     private readonly ISettingService settingService;
 
-    public Setting1ViewModel(AppDbContext appDbContext, ISettingService settingService)
+    public Setting1ViewModel(ISettingService settingService)
     {
-        this.appDbContext = appDbContext;
         this.settingService = settingService;
     }
-
-
 
     public int MyProperty
     {
@@ -26,11 +22,10 @@ internal partial class Setting1ViewModel : ObservableObject
             OnPropertyChanged();
         }
     }
+
     [RelayCommand]
     private async Task SaveAsync()
     {
-        await appDbContext.SaveChangesAsync();
+        await settingService.SaveAsync();
     }
-
-
 }

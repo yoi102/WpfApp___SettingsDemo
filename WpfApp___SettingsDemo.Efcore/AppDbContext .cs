@@ -47,8 +47,6 @@ public class AppDbContext : DbContext
         if (!UserSettings.Any(u => u.UserSid == sid))
         {
             var userSettings = new UserSettings() { UserSid = sid };
-            userSettings.Setting1 = new Setting1();
-            userSettings.Setting2 = new Setting2();
 
             UserSettings.Add(userSettings);
             SaveChanges();
