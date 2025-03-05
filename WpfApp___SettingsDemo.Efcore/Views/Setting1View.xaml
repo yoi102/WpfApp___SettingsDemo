@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="WpfApp___SettingsDemo.Efcore.Views.Setting1View"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:WpfApp___SettingsDemo.Efcore.Views"
+             xmlns:viewmodels="clr-namespace:WpfApp___SettingsDemo.Efcore.ViewModels"
+             d:DataContext="{d:DesignInstance Type=viewmodels:Setting1ViewModel}"
+             mc:Ignorable="d"
+             d:Height="450"
+            d:Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <TextBox Text="{Binding MyProperty}" />
+        <Button Grid.Row="1"
+                Content="Save"
+                Command="{Binding SaveCommand}" />
+    </Grid>
+</UserControl>
