@@ -1,6 +1,6 @@
 ﻿using System.Reflection.Metadata;
 
-namespace WpfApp___SettingsDemo.Efcore;
+namespace WpfApp___SettingsDemo.Efcore.Entities;
 
 public class Setting1
 {

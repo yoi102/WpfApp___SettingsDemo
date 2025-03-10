@@ -1,4 +1,4 @@
-﻿namespace WpfApp___SettingsDemo.Efcore;
+﻿namespace WpfApp___SettingsDemo.Efcore.Entities;
 
 public class Setting2
 {

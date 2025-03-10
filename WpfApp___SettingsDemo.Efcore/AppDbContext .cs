@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.IO;
 using System.Security.Principal;
+using WpfApp___SettingsDemo.Efcore.Entities;
 
 namespace WpfApp___SettingsDemo.Efcore;
 

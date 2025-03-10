@@ -1,4 +1,6 @@
-﻿namespace WpfApp___SettingsDemo.Efcore.Services;
+﻿using WpfApp___SettingsDemo.Efcore.Entities;
+
+namespace WpfApp___SettingsDemo.Efcore.Services;
 
 public interface ISettingService
 {
